@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Ads Campaign Information Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <img src="your-logo.png" alt="Your Company Logo">
+        <h1>Facebook Ads Campaign Information Form</h1>
+    </header>
+
+    <form id="campaign-form">
+        <!-- Business Information -->
+        <div class="form-section">
+            <div class="section-title">1. Business Information (Impormasyon ng Negosyo)</div>
+            <label for="business-name">Business Name (Pangalan ng Negosyo):</label>
+            <input type="text" id="business-name" name="business-name" required>
+
+            <label for="products-services">What products/services do you offer? (Ano ang mga produkto/serbisyo na inaalok mo?)</label>
+            <textarea id="products-services" name="products-services" rows="4" required></textarea>
+
+            <label for="business-unique">What makes your business unique? (Ano ang nagpapalakas o nagpapabukod-tangi sa iyong negosyo?)</label>
+            <textarea id="business-unique" name="business-unique" rows="4" required></textarea>
+
+            <label for="business-location">Where is your business located? (Saan matatagpuan ang iyong negosyo?)</label>
+            <input type="text" id="business-location" name="business-location" required>
+        </div>
+
+        <!-- Target Audience -->
+        <div class="form-section">
+            <div class="section-title">2. Target Audience (Target na Audience)</div>
+            <label for="ideal-customer">Who is your ideal customer? (Sino ang iyong ideal na customer?)</label>
+            <textarea id="ideal-customer" name="ideal-customer" rows="4" required></textarea>
+
+            <label for="age-range">What age range do you want to target? (Anong saklaw ng edad ang nais mong targetin?)</label>
+            <input type="text" id="age-range" name="age-range" required>
+
+            <label for="customer-location">Where are your target customers located? (Saan matatagpuan ang iyong mga target na customer?)</label>
+            <input type="text" id="customer-location" name="customer-location" required>
+
+            <label for="customer-interests">What are their interests or hobbies? (Ano ang mga interes o libangan ng iyong mga target na customer?)</label>
+            <textarea id="customer-interests" name="customer-interests" rows="4" required></textarea>
+
+            <div class="checkbox-group">
+                <label>Do you have existing customers? (May mga existing customers ka na ba?)</label>
+                <input type="radio" id="existing-customers-yes" name="existing-customers" value="yes"> Yes (Oo)
+                <input type="radio" id="existing-customers-no" name="existing-customers" value="no"> No (Hindi)
+            </div>
+        </div>
+
+        <!-- Ad Goals -->
+        <div class="form-section">
+            <div class="section-title">3. Ad Goals (Mga Layunin sa Ads)</div>
+            <label for="ad-goals">What do you want to achieve with your Facebook Ads? (Ano ang nais mong makamit gamit ang iyong Facebook Ads?)</label>
+            <textarea id="ad-goals" name="ad-goals" rows="4" required></textarea>
+
+            <label for="ad-budget">How much are you willing to spend on a daily basis for your ads? (Magkano ang handa mong gastusin araw-araw para sa iyong ads?)</label>
+            <input type="number" id="ad-budget" name="ad-budget" min="100" required>
+            <small>Note: ₱100 per day ang minimum na budget.</small>
+
+            <label for="ad-duration">How long would you like your ads to run? (Gaano katagal mo nais tumakbo ang iyong ads?)</label>
+            <input type="text" id="ad-duration" name="ad-duration" required>
+        </div>
+
+        <!-- Offers & Call to Action -->
+        <div class="form-section">
+            <div class="section-title">4. Offers & Call to Action (Mga Alok at Aksyon)</div>
+            <label for="promotions">Do you have any promotions, discounts, or special offers that you would like to highlight? (Mayroon ka bang mga promos, diskwento, o espesyal na alok na nais mong i-highlight?)</label>
+            <textarea id="promotions" name="promotions" rows="4"></textarea>
+
+            <label for="cta-action">What action do you want customers to take after seeing the ad? (Anong aksyon ang nais mong gawin ng mga customer pagkatapos nilang makita ang ad?)</label>
+            <select id="cta-action" name="cta-action" required>
+                <option value="send-message">Send a message (Magpadala ng mensahe)</option>
+                <option value="place-order">Place an order (Mag-order agad)</option>
+                <option value="visit-website">Visit your website (Mag-visit sa website)</option>
+                <option value="fill-form">Fill out a form (Mag-fill out ng form)</option>
+                <option value="other">Other (Iba pa, pakilagay)</option>
+            </select>
+            <input type="text" id="cta-action-other" name="cta-action-other" placeholder="If other, specify (Kung iba, pakilagay)">
+        </div>
+
+        <!-- Additional Notes -->
+        <div class="form-section">
+            <div class="section-title">5. Additional Notes or Questions (Karagdagang Tala o Tanong)</div>
+            <textarea id="additional-notes" name="additional-notes" rows="4"></textarea>
+        </div>
+
+        <!-- Client's Signature -->
+        <div class="form-section">
+            <div class="section-title">6. Client's Signature (Pirma ng Kliyente)</div>
+            <label for="client-name">Client's Name (Pangalan ng Kliyente):</label>
+            <input type="text" id="client-name" name="client-name" required>
+
+            <label for="signature-date">Date (Petsa):</label>
+            <input type="date" id="signature-date" name="signature-date" required>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit (I-submit)</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
