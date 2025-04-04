@@ -7,7 +7,7 @@ document.getElementById('campaign-form').addEventListener('submit', function(eve
         data[key] = value;
     });
 
-    fetch('https://script.google.com/macros/s/your-google-apps-script-url/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbx54A5G8QTAbpukuTPg2Lq6jeRQq_GYkUG6cZHZ5rjXwg4UyQYnnocg5N_GUHGpoZUg3w/exec', {  // Use the URL from your Apps Script
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
@@ -16,9 +16,9 @@ document.getElementById('campaign-form').addEventListener('submit', function(eve
     })
     .then(response => response.json())
     .then(data => {
-        alert('Form submitted successfully! (Matagumpay na naisumite ang form!)');
+        alert('Form submitted successfully!');
     })
     .catch(error => {
-        alert('Error submitting form: (May error sa pagsusumite ng form): ' + error);
+        alert('Error submitting form: ' + error);
     });
 });
